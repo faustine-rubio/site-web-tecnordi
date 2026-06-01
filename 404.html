@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>404 - Page introuvable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #fff1c6;
+            padding: 50px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #fdf8eb;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 50px;
+            color: #6d18a8;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            font-size: 18px;
+            color: white;
+            background-color: #6d18a8;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        footer {
+            background-color: #bf7cee;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+
+            margin: auto;
+
+            display: flex;
+            align-items: center;
+            width: 99%;
+        }
+
+        footer div {
+            flex: 1;
+        }
+
+
+        .footer-left {
+            text-align: left;
+            line-height: 1.5;
+        }
+
+
+        .footer-center {
+            text-align: center;
+            margin: 0;
+        }
+
+        .footer-right {
+            text-align: right;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            line-height: 0.6;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #bf7cee;
+            /*Couleur de l'entête*/
+            color: #ffffff;
+            /*Couleur du texte de l'entête*/
+            font-weight: bold;
+            width: 99%;
+        }
+
+        header div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header nav ul {
+            display: flex;
+            list-style: none;
+            /*enlève les points dans la liste*/
+        }
+
+        header nav a {
+            color: #ffffff;
+            text-decoration: none;
+            /*enlève le soulignement*/
+        }
+    </style>
+</head>
+
+<header>
+    <div>
+        <a href="index.html" class="bouton" style="background-color: #bf7cee">
+            <img src="images/Logo.png" alt="logo technordi" width="100px" />
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="liste-produit.html">Nos produits</a></li>
+                <li><a href="carte.html">Nous trouver</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="Connexion.html">Se connecter</a></li>
+                <li><a href="Inscription.html">S'inscrire</a></li>
+                <li>
+                    <a href="404.html"><img src="images/panier-blanc.webp" alt="Panier" width="30px" /></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <div class="container">
+        <h1>Oups !</h1>
+        <h2>ERROR 404</h2>
+        <p>La page que vous cherchez a disparu... ou n'a jamais existé !</p>
+        <p>Vous pouvez retourner à la page d'accueil ou acheter le nouveau <strong>BacBook Neo 13</strong>.</p>
+        <a href="index.html" class="button">Retour à l'accueil</a>
+    </div>
+</body>
+
+<footer>
+    <div class="footer-left">
+        Accès rapide :
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="liste-produit.html">Nos produits</a></li>
+            <li><a href="carte.html">Nous trouver</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="Connexion.html">Se connecter</a></li>
+            <li><a href="Inscription.html">S'inscrire</a></li>
+            <li><a href="404.html">Panier</a></li>
+        </ul>
+    </div>
+    <div class="footer-center">
+        <p>
+            © ESAIP - Site réalisé par : <br />
+            Aurélie PALUMBO, Angèle PHAN <br />
+            Cléa MOURY, Faustine RUBIO
+        </p>
+    </div>
+    <div class="footer-right">
+        <img src="images/Instagram.png" alt="Instagram" width="100px" />
+        <img src="images/Discord.png" alt="Discord" width="50px" />
+        <img src="images/Twitter.webp" alt="Twitter" width="50px" />
+        <img src="images/Youtube.svg" alt="Youtube" width="50px" />
+    </div>
+</footer>
+
+</html>
