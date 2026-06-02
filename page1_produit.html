@@ -1,157 +1,225 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>BadBook Air 13 — TechNordi</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>BadBook Air 13 — TechNordi</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-    <body>
-        <header>
-            <div class="inner">
-                <a href="index.html" class="brand"><img src="images/Logo.png" alt="TechNordi"/></a>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="liste-produit.html">Nos produits</a></li>
-                        <li><a href="carte.html">Nous trouver</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="connexion.html" class="nav-cta">Se connecter</a></li>
-                        <li><a href="inscription.html">S'inscrire</a></li>
-                        <li><a href="404.html"><img src="images/panier-blanc.webp" alt="Panier" width="30"/></a></li>
-                    </ul>
-                </nav>
+  <body>
+    <header>
+      <div class="inner">
+        <a href="index.html" class="brand"
+          ><img src="images/Logo.png" alt="TechNordi"
+        /></a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="liste-produit.html">Nos produits</a></li>
+            <li><a href="carte.html">Nous trouver</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="connexion.html" class="nav-cta">Se connecter</a></li>
+            <li><a href="inscription.html">S'inscrire</a></li>
+            <li>
+              <a href="404.html"
+                ><img src="images/panier-blanc.webp" alt="Panier" width="30"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="product-hero">
+        <div class="main-image">
+          <figure>
+            <div
+              class="carousel"
+              id="productCarousel"
+              aria-label="Galerie du produit"
+            >
+              <div class="carousel-track">
+                <div class="carousel-slide">
+                  <img
+                    src="images/BadBook Apple Air 13/face.png"
+                    alt="BadBook Apple Air 13 - face"
+                  />
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    src="images/BadBook Apple Air 13/dessus.png"
+                    alt="BadBook Apple Air 13 - dessus"
+                  />
+                </div>
+              </div>
+              <div class="carousel-controls">
+                <button
+                  class="carousel-button"
+                  id="prevBtn"
+                  aria-label="Image précédente"
+                >
+                  ‹
+                </button>
+                <button
+                  class="carousel-button"
+                  id="nextBtn"
+                  aria-label="Image suivante"
+                >
+                  ›
+                </button>
+              </div>
             </div>
-        </header>
+            <figcaption class="center">
+              BadBook Air 13 — finition aluminium
+            </figcaption>
+          </figure>
+          <div
+            class="carousel-dots"
+            id="carouselDots"
+            role="tablist"
+            aria-label="Navigation images"
+          ></div>
+        </div>
 
-        <main>
-            <section class="product-hero">
-                <div class="main-image">
-                    <figure>
-                        <div class="carousel" id="productCarousel" aria-label="Galerie du produit">
-                            <div class="carousel-track">
-                                <div class="carousel-slide"><img src="images/BadBook Air 13/face.png" alt="BadBook Air 13 - face"></div>
-                                <div class="carousel-slide"><img src="images/BadBook Air 13/dessus.png" alt="BadBook Air 13 - dessus"></div>
-                            </div>
-                            <div class="carousel-controls">
-                                <button class="carousel-button" id="prevBtn" aria-label="Image précédente">‹</button>
-                                <button class="carousel-button" id="nextBtn" aria-label="Image suivante">›</button>
-                            </div>
-                        </div>
-                        <figcaption class="center">BadBook Air 13 — finition aluminium</figcaption>
-                    </figure>
-                    <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="Navigation images"></div>
-                </div>
+        <aside class="summary">
+          <h1 class="product-title">BadBook Air 13</h1>
+          <div class="price-badge">À partir de 48 €/mois</div>
 
-                <aside class="summary">
-                    <h1 class="product-title">BadBook Air 13</h1>
-                    <div class="price-badge">À partir de 48 €/mois</div>
+          <ul class="feature-list">
+            <li>512 Go SSD / 16 Go RAM</li>
+            <li>Puce M5 — CPU 10 cœurs</li>
+            <li>GPU 10 cœurs — graphismes fluides</li>
+            <li>Jusqu'à 12 heures d'autonomie</li>
+          </ul>
 
-                    <ul class="feature-list">
-                        <li>512 Go SSD / 16 Go RAM</li>
-                        <li>Puce M5 — CPU 10 cœurs</li>
-                        <li>GPU 10 cœurs — graphismes fluides</li>
-                        <li>Jusqu'à 12 heures d'autonomie</li>
-                    </ul>
+          <div
+            class="storage-options"
+            role="radiogroup"
+            aria-label="Options de stockage"
+          >
+            <button aria-pressed="true">512 Go</button>
+            <button>1 To</button>
+          </div>
 
-                    <div class="storage-options" role="radiogroup" aria-label="Options de stockage">
-                        <button aria-pressed="true">512 Go</button>
-                        <button>1 To</button>
-                    </div>
+          <div class="cta-row">
+            <button class="btn-buy">Acheter maintenant</button>
+            <button class="btn-add">Ajouter au panier</button>
+          </div>
 
-                    <div class="cta-row">
-                        <button class="btn-buy">Acheter maintenant</button>
-                        <button class="btn-add">Ajouter au panier</button>
-                    </div>
+          <p class="shipping">Livraison gratuite · Expédié sous 24-48h</p>
+        </aside>
+      </section>
+    </main>
 
-                    <p class="shipping">Livraison gratuite · Expédié sous 24-48h</p>
-                </aside>
-            </section>
-        </main>
+    <footer>
+      <div class="inner">
+        <div class="col">
+          <h4>Accès rapide</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="liste-produit.html">Nos produits</a></li>
+            <li><a href="carte.html">Nous trouver</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="connexion.html">Se connecter</a></li>
+            <li><a href="inscription.html">S'inscrire</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Contact</h4>
+          <p>ESAIP — Par équipe TechNordi</p>
+          <p>contact@tecnordi.example</p>
+        </div>
+        <div class="col socials">
+          <h4>Réseaux</h4>
+          <a href="#"><img src="images/Instagram.png" alt="Instagram" /></a>
+          <a href="#"><img src="images/Discord.png" alt="Discord" /></a>
+          <a href="#"><img src="images/Twitter.webp" alt="Twitter" /></a>
+          <a href="#"><img src="images/Youtube.svg" alt="Youtube" /></a>
+        </div>
+        <div class="copyright">
+          © ESAIP — Aurélie PALUMBO, Angèle PHAN, Cléa MOURY, Faustine RUBIO
+        </div>
+      </div>
+    </footer>
 
-        <footer>
-            <div class="inner">
-                <div class="col">
-                    <h4>Accès rapide</h4>
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="liste-produit.html">Nos produits</a></li>
-                        <li><a href="carte.html">Nous trouver</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="connexion.html">Se connecter</a></li>
-                        <li><a href="inscription.html">S'inscrire</a></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h4>Contact</h4>
-                    <p>ESAIP — Par équipe TechNordi</p>
-                    <p>contact@tecnordi.example</p>
-                </div>
-                <div class="col socials">
-                    <h4>Réseaux</h4>
-                    <a href="#"><img src="images/Instagram.png" alt="Instagram"/></a>
-                    <a href="#"><img src="images/Discord.png" alt="Discord"/></a>
-                    <a href="#"><img src="images/Twitter.webp" alt="Twitter"/></a>
-                    <a href="#"><img src="images/Youtube.svg" alt="Youtube"/></a>
-                </div>
-                <div class="copyright">© ESAIP — Aurélie PALUMBO, Angèle PHAN, Cléa MOURY, Faustine RUBIO</div>
-            </div>
-        </footer>
+    <script>
+      (function () {
+        const track = document.querySelector(
+          "#productCarousel .carousel-track",
+        );
+        if (!track) return;
+        const slides = Array.from(track.children);
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+        const dotsWrap = document.getElementById("carouselDots");
+        let index = 0;
+        let interval = null;
 
-        <script>
-            (function(){
-                const track = document.querySelector('#productCarousel .carousel-track');
-                if(!track) return;
-                const slides = Array.from(track.children);
-                const prevBtn = document.getElementById('prevBtn');
-                const nextBtn = document.getElementById('nextBtn');
-                const dotsWrap = document.getElementById('carouselDots');
-                let index = 0;
-                let interval = null;
+        function goTo(i) {
+          index = (i + slides.length) % slides.length;
+          track.style.transform = `translateX(-${index * 100}%)`;
+          updateDots();
+        }
 
-                function goTo(i){
-                    index = (i + slides.length) % slides.length;
-                    track.style.transform = `translateX(-${index * 100}%)`;
-                    updateDots();
-                }
+        function next() {
+          goTo(index + 1);
+        }
+        function prev() {
+          goTo(index - 1);
+        }
 
-                function next(){ goTo(index + 1); }
-                function prev(){ goTo(index - 1); }
+        function createDots() {
+          slides.forEach((_, i) => {
+            const d = document.createElement("button");
+            d.className = "carousel-dot";
+            d.setAttribute("aria-label", `Aller à l'image ${i + 1}`);
+            d.addEventListener("click", () => {
+              goTo(i);
+              resetAuto();
+            });
+            dotsWrap.appendChild(d);
+          });
+        }
 
-                function createDots(){
-                    slides.forEach((_, i)=>{
-                        const d = document.createElement('button');
-                        d.className = 'carousel-dot';
-                        d.setAttribute('aria-label', `Aller à l'image ${i+1}`);
-                        d.addEventListener('click', ()=>{ goTo(i); resetAuto(); });
-                        dotsWrap.appendChild(d);
-                    });
-                }
+        function updateDots() {
+          const dots = Array.from(dotsWrap.children);
+          dots.forEach((d, i) => d.classList.toggle("active", i === index));
+        }
 
-                function updateDots(){
-                    const dots = Array.from(dotsWrap.children);
-                    dots.forEach((d, i)=> d.classList.toggle('active', i===index));
-                }
+        function startAuto() {
+          if (interval) clearInterval(interval);
+          interval = setInterval(next, 4000);
+        }
+        function resetAuto() {
+          startAuto();
+        }
 
-                function startAuto(){
-                    if(interval) clearInterval(interval);
-                    interval = setInterval(next, 4000);
-                }
-                function resetAuto(){ startAuto(); }
+        prevBtn?.addEventListener("click", () => {
+          prev();
+          resetAuto();
+        });
+        nextBtn?.addEventListener("click", () => {
+          next();
+          resetAuto();
+        });
 
-                prevBtn?.addEventListener('click', ()=>{ prev(); resetAuto(); });
-                nextBtn?.addEventListener('click', ()=>{ next(); resetAuto(); });
+        createDots();
+        goTo(0);
+        startAuto();
 
-                createDots();
-                goTo(0);
-                startAuto();
-
-                document.addEventListener('keydown', (e)=>{
-                    if(e.key === 'ArrowLeft') { prev(); resetAuto(); }
-                    if(e.key === 'ArrowRight') { next(); resetAuto(); }
-                });
-            })();
-        </script>
-    </body>
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "ArrowLeft") {
+            prev();
+            resetAuto();
+          }
+          if (e.key === "ArrowRight") {
+            next();
+            resetAuto();
+          }
+        });
+      })();
+    </script>
+  </body>
 </html>
