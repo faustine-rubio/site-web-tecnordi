@@ -2,212 +2,78 @@
 <html lang="fr">
 
 <head>
-   <title>Page d'inscription</title>
-   <style>
-    form {
-        border: thick black solid;
-        background-color: rgb(251, 220, 255);
-        min-width: 300px;
-        max-width: 800px;
-        display: flex;
-        flex-wrap: wrap;
-        width: 500px;
-        height: 400px;
-        align-items: center;
-    }
-
-    .field {
-        flex-basis: 100%;
-        display: flex;
-    }
-
-    label[for=commentaire], textarea {
-        flex-basis: 80% ;
-    }
-
-    input {
-        flex-grow: 1 ;
-    }
-
-    
-header {
-    background-color: #bf7cee; /*Couleur de l'entête*/
-    color: #ffffff; /*Couleur du texte de l'entête*/
-    font-weight: bold;
-    width: 99%;
-}
-
-header div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav ul {
-    display: flex;
-    list-style: none; /*enlève les points dans la liste*/
-}
-
-nav a {
-    color: #ffffff;
-    text-decoration: none; /*enlève le soulignement*/
-}
-
-
-section { /*bloc*/
-    background-color: white;
-    margin: 20px 0;
-    padding:20px;
-    border-radius: 5px;
-}
-
-
-.bouton { /*bouton voir plus*/
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 15px;
-    background-color: #6d18a8;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.bouton:hover { /*change la couleur quand on passe la souris*/
-    background-color: #ff0390;
-}
-
-.boxs {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.box {
-    flex: 1; 
-    min-width: 250px; /*taille minimum de la box*/
-    background-color: #bf7cee; /*arrière plan de la box*/
-    padding: 15px;
-    border-radius: 5px;
-}
-
-footer {
-    background-color: #bf7cee;
-    color: white;
-    padding: 15px;
-    margin-top: 20px;
-
-    margin: auto;
-
-    display: flex;
-    align-items: center;
-    width: 99%;
-}
-
-footer  div {
-    flex: 1;
-}
-
-
-.footer-left{
-    text-align: left;
-    line-height:1.5;
-}
-
-
-.footer-center {
-    text-align: center;
-    margin: 0;
-}
-
-.footer-right {
-    text-align: right;
-}
-
-footer ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    line-height: 0.6;
-}
-
-footer a {
-    text-decoration: none;
-    color: #ffffff;
-}
-   </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Inscription - TechNordi</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
-<header>
-      <div>
-        <a href="index.html" class="bouton" style="background-color: #bf7cee">
-          <img src="images/Logo.png" alt="logo technordi" width="100px" />
-        </a>
-        <nav>
-          <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="liste-produit.html">Nos produits</a></li>
-            <li><a href="carte.html">Nous trouver</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="Connexion.html">Se connecter</a></li>
-            <li><a href="Inscription.html">S'inscrire</a></li>
-            <li>
-              <a href="404.html"
-                ><img src="images/panier-blanc.webp" alt="Panier" width="30px"
-              /></a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
 <body>
-    <h1 style="text-align: center;"> Inscription </h1>
-    <form method="get" action="">
-        <label for="prenom">Prénom :</label>
-        <input type="text" name="prenom" id="prenom" placeholder="Ex. John">
-
-        <label for="nom">Nom :</label>
-        <input type="text" name="nom" id="nom" placeholder="Ex. Doe">
-
-        <label for="email">Email :</label>
-        <input type="email" name="email" id="email" >
-
-        <label for="date"> Date de naissance :</label>
-        <input type="date">
-
-        <input type="reset" >
-
-        <label for="envoyer"><a href="confirmation.html" class="bouton">  </label>
-        <input type="submit" value="Envoyer"></a>
-    </form>
-
-<footer>
-      <div class="footer-left">
-        Accès rapide :
+  <header>
+    <div class="inner">
+      <a href="index.html" class="brand"><img src="images/Logo.png" alt="TechNordi"/></a>
+      <nav>
         <ul>
           <li><a href="index.html">Accueil</a></li>
           <li><a href="liste-produit.html">Nos produits</a></li>
           <li><a href="carte.html">Nous trouver</a></li>
           <li><a href="faq.html">FAQ</a></li>
-          <li><a href="Connexion.html">Se connecter</a></li>
-          <li><a href="Inscription.html">S'inscrire</a></li>
-          <li><a href="404.html">Panier</a></li>
+          <li><a href="connexion.html" class="nav-cta">Se connecter</a></li>
+          <li><a href="inscription.html">S'inscrire</a></li>
+          <li><a href="404.html"><img src="images/panier-blanc.webp" alt="Panier" width="30"/></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <h1 class="center">Inscription</h1>
+  <main class="container">
+    <form method="get" action="confirmation.html" class="form-card">
+      <label for="nom">Nom</label>
+      <input type="text" id="nom" name="nom" required />
+
+      <label for="prenom">Prénom</label>
+      <input type="text" id="prenom" name="prenom" required />
+
+      <label for="email">Adresse mail</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="date">Date de naissance</label>
+      <input type="date" id="date" name="date" />
+
+      <div class="center" style="margin-top:12px;">
+        <button type="submit" class="btn-primary">S'inscrire</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <div class="inner">
+      <div class="col">
+        <h4>Accès rapide</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="liste-produit.html">Nos produits</a></li>
+          <li><a href="carte.html">Nous trouver</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="connexion.html">Se connecter</a></li>
+          <li><a href="inscription.html">S'inscrire</a></li>
         </ul>
       </div>
-      <div class="footer-center">
-        <p>
-          © ESAIP - Site réalisé par : <br />
-          Aurélie PALUMBO, Angèle PHAN <br />
-          Cléa MOURY, Faustine RUBIO
-        </p>
+      <div class="col">
+        <h4>Contact</h4>
+        <p>contact@tecnordi.example</p>
       </div>
-      <div class="footer-right">
-        <img src="images/Instagram.png" alt="Instagram" width="100px" />
-        <img src="images/Discord.png" alt="Discord" width="50px" />
-        <img src="images/Twitter.webp" alt="Twitter" width="50px" />
-        <img src="images/Youtube.svg" alt="Youtube" width="50px" />
+      <div class="col socials">
+        <h4>Réseaux</h4>
+        <a href="#"><img src="images/Instagram.png" alt="Instagram"/></a>
+        <a href="#"><img src="images/Discord.png" alt="Discord"/></a>
+        <a href="#"><img src="images/Twitter.webp" alt="Twitter"/></a>
+        <a href="#"><img src="images/Youtube.svg" alt="Youtube"/></a>
       </div>
-    </footer>
+      <div class="copyright">© ESAIP - Site réalisé par : Aurélie PALUMBO, Angèle PHAN, Cléa MOURY, Faustine RUBIO</div>
+    </div>
+  </footer>
 
 </body>
 

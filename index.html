@@ -3,145 +3,124 @@
   <head>
     <meta charset="UTF-8" />
     <title>Accueil</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
     <header>
-      <div>
-        <a href="index.html" class="bouton" style="background-color: #bf7cee">
-          <img src="images/Logo.png" alt="logo technordi" width="100px" />
-        </a>
+      <div class="inner">
+        <a href="index.html" class="brand"><img src="images/Logo.png" alt="TechNordi"/></a>
         <nav>
           <ul>
             <li><a href="index.html">Accueil</a></li>
             <li><a href="liste-produit.html">Nos produits</a></li>
             <li><a href="carte.html">Nous trouver</a></li>
             <li><a href="faq.html">FAQ</a></li>
-            <li><a href="Connexion.html">Se connecter</a></li>
-            <li><a href="Inscription.html">S'inscrire</a></li>
-            <li>
-              <a href="404.html"
-                ><img src="images/panier-blanc.webp" alt="Panier" width="30px"
-              /></a>
-            </li>
+            <li><a href="connexion.html" class="nav-cta">Se connecter</a></li>
+            <li><a href="inscription.html">S'inscrire</a></li>
+            <li><a href="404.html"><img src="images/panier-blanc.webp" alt="Panier" width="30"/></a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main>
-      <section>
-        <div>
-          <h1>TechNordi vous présente...</h1>
-        </div>
-      </section>
-
-      <section>
-        <div>
-          <h2>BadBook Apple Neo 13</h2>
-          <img
-            src="images\BadBook Apple Neo 13\face.png"
-            alt="BadBook Apple Neo 13"
-          />
-          <p>
-            Rapide et fluide - Design élégant - Idéal pour un usage quotidien
-          </p>
-          <a href="page1_produit.html" class="bouton">En savoir plus</a>
-        </div>
-      </section>
-
-      <section>
-        <h2>Vidéo de présentation</h2>
-        <video
-          controls
-          src="video_ordi.mp4"
-          width="88%"
-          style="margin: auto"
-          autoplay
-        ></video>
-      </section>
-
-      <section>
-        <div>
-          <h2>Avis clients</h2>
-          <div class="boxs">
-            <article class="box">
-              <h3>⭐⭐⭐⭐⭐ <br />“Excellent rapport qualité/prix”</h3>
-              <p>
-                J’utilise cet ordinateur depuis 2 mois pour les cours et un peu
-                de montage vidéo, et franchement rien à dire. Il est rapide,
-                silencieux et l’écran est vraiment agréable. La batterie tient
-                facilement la journée. Je recommande sans hésiter.
-              </p>
-            </article>
-
-            <article class="box">
-              <h3>⭐⭐⭐⭐☆ <br />“Très bon pour les études”</h3>
-              <p>
-                Parfait pour de la bureautique et du streaming. Il démarre
-                rapidement grâce au SSD et ne chauffe pas trop. Petit bémol : le
-                son pourrait être un peu plus puissant.
-              </p>
-            </article>
-
-            <article class="box">
-              <h3>⭐⭐⭐⭐☆ <br />“Bonne autonomie”</h3>
-              <p>
-                L’autonomie est un vrai point fort, je peux tenir toute une
-                journée de cours sans le recharger. L’écran est aussi très
-                confortable pour les yeux.
-              </p>
-            </article>
-
-            <article class="box">
-              <h3>⭐⭐⭐⭐⭐ <br />“Service exceptionnel”</h3>
-              <p>
-                Le service client est très réactif et professionnel. Ils m’ont
-                aidé à résoudre un problème technique rapidement.
-              </p>
-            </article>
+      <section class="hero-container">
+        <div class="hero-row">
+          <div style="flex:1;">
+            <h1>Des ordinateurs pensés pour vos études et votre créativité</h1>
+            <p style="color:#555;margin-top:12px;font-size:18px;">Performance, autonomie et design réunis dans la gamme BadBook. Profitez d'offres étudiantes et d'un service client réactif.</p>
+            <div style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap;">
+              <a href="liste-produit.html" class="btn-primary">Voir nos produits</a>
+              <a href="page1_produit.html" class="bouton-link">Découvrir le BadBook</a>
+            </div>
+            <ul style="margin-top:18px;list-style:none;padding-left:0;color:#444;">
+              <li>✔ SSD ultra-rapide</li>
+              <li>✔ Batterie longue durée</li>
+              <li>✔ Service & garantie locale</li>
+            </ul>
+          </div>
+          <div style="flex:1;text-align:center;">
+            <img src="images/BadBook Apple Neo 15/face.png" alt="BadBook" class="hero-img"/>
           </div>
         </div>
       </section>
 
       <section>
-        <div>
-          <h2>Contactez-nous.</h2>
-          <p>
-            Aix-en-Provence : 06.12.34.56.78 - techmac@exemple.com <br />
-            Toulon : 06.12.34.56.79 - techenr@exemple.com
-          </p>
-          <a href="carte.html" class="bouton">En savoir plus</a>
+        <h2 style="text-align:center;">Nos best-sellers</h2>
+        <div class="boxs" style="justify-content:center;margin-top:14px;">
+          <article class="card" style="width:260px;text-align:center;">
+            <img src="images/BadBook Apple Neo 15/face.png" alt="Neo 15 dessus" style="border-radius:8px;"/>
+            <h3>BadBook Neo 15</h3>
+            <p>Performance élevée pour les tâches exigeantes.</p>
+            <a href="liste-produit.html" class="bouton-link">Voir</a>
+          </article>
+          
+          <article class="card" style="width:260px;text-align:center;">
+            <img src="images/BadBook Apple Air 13/face.png" alt="Air 13" style="border-radius:8px;"/>
+            <h3>BadBook Air 13</h3>
+            <p>Portable, léger, parfait pour les étudiants.</p>
+            <a href="page1_produit.html" class="bouton-link">Voir</a>
+          </article>
+
+          <article class="card" style="width:260px;text-align:center;">
+            <img src="images\BadBook Apple Neo 13\face.png" alt="Neo 13" style="border-radius:8px;"/>
+            <h3>BadBook Neo 13</h3>
+            <p>Design moderne et écran éclatant.</p>
+            <a href="liste-produit.html" class="bouton-link">Voir</a>
+          </article>
+
+          <article class="card" style="width:260px;text-align:center;">
+            <img src="images/BadBook Apple Air 15/face.png" alt="Air 15 dessus" style="border-radius:8px;"/>
+            <h3>BadBook Air 15</h3>
+            <p>Puissance pour la création et le montage.</p>
+            <a href="liste-produit.html" class="bouton-link">Voir</a>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2 style="text-align:center;">Avis clients</h2>
+        <div class="boxs" style="justify-content:center;margin-top:12px;">
+          <article class="box" style="max-width:320px;">
+            <h2>⭐⭐⭐⭐⭐</h2>
+            <h3>“Excellent rapport qualité/prix”</h3>
+            <p>Rapide, silencieux et batterie solide. Recommandé pour les étudiants.</p>
+          </article>
+          <article class="box" style="max-width:320px;">
+            <h2>⭐⭐⭐⭐☆</h2>
+            <h3>“Très bon pour les études”</h3>
+            <p>Parfait pour la bureautique et le streaming, léger et compact.</p>
+          </article>
         </div>
       </section>
     </main>
 
     <footer>
-      <div class="footer-left">
-        Accès rapide :
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="liste-produit.html">Nos produits</a></li>
-          <li><a href="carte.html">Nous trouver</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="Connexion.html">Se connecter</a></li>
-          <li><a href="Inscription.html">S'inscrire</a></li>
-          <li><a href="404.html">Panier</a></li>
-        </ul>
-      </div>
-      <div class="footer-center">
-        <p>
-          © ESAIP - Site réalisé par : <br />
-          Aurélie PALUMBO, Angèle PHAN <br />
-          Cléa MOURY, Faustine RUBIO
-        </p>
-      </div>
-      <div class="footer-right">
-        <img src="images/Instagram.png" alt="Instagram" width="100px" />
-        <img src="images/Discord.png" alt="Discord" width="50px" />
-        <img src="images/Twitter.webp" alt="Twitter" width="50px" />
-        <img src="images/Youtube.svg" alt="Youtube" width="50px" />
+      <div class="inner">
+        <div class="col">
+          <h4>Accès rapide</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="liste-produit.html">Nos produits</a></li>
+            <li><a href="carte.html">Nous trouver</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="connexion.html">Se connecter</a></li>
+            <li><a href="inscription.html">S'inscrire</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Contact</h4>
+          <p>Aix-en-Provence : 06.12.34.56.78<br/>Toulon : 06.12.34.56.79</p>
+        </div>
+        <div class="col socials">
+          <h4>Réseaux</h4>
+          <a href="#"><img src="images/Instagram.png" alt="Instagram"/></a>
+          <a href="#"><img src="images/Discord.png" alt="Discord"/></a>
+          <a href="#"><img src="images/Twitter.webp" alt="Twitter"/></a>
+          <a href="#"><img src="images/Youtube.svg" alt="Youtube"/></a>
+        </div>
+        <div class="copyright">© ESAIP - Aurélie PALUMBO, Angèle PHAN, Cléa MOURY, Faustine RUBIO</div>
       </div>
     </footer>
   </body>
